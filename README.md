@@ -10,10 +10,11 @@
 
 * 2:
   To determine how much pixels the program needs to draw between the left and the right side of the heart it uses the formula **(2X + 3 + (X-1))** where **X** is the size, Here's an example with two hearts of sizes **1** and **2**:
-  ![image](https://github.com/realabases/heart.c/assets/138024063/806c0853-360d-463a-8734-0dd1fd845f47)
+  ![image](https://github.com/realabases/heart.c/assets/138024063/f2f06cf8-c3a1-49c0-b4dc-f30232050f86)
+
 
 * 3:
-  To draw the rest of the heart we need to determine the height of the rest of it, It depends on whether the size is an **odd** or an **even** number, if its **odd** then formula of the height is **((3X + 1) / 2)** where **X** is the size.
+  To draw the rest of the heart we need to determine the height of the rest of it, It depends on whether the size is an odd or an even number, If its **odd** then the formula of the height is **((3X + 1) / 2)** where **X** is the size.
   
   However if it's **even** then the forumla is **(1.5X)** where **X** is the size.
 ![image](https://github.com/realabases/heart.c/assets/138024063/3dc266f9-2f35-4157-b777-efcb850b45e0)
