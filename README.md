@@ -5,7 +5,7 @@
   
 ![image](https://github.com/realabases/heart.c/assets/138024063/5eb46e6e-dd94-4274-8332-75c91a4c1fa6)
 
-  The top pixels of the heart is equals to **(size - 2)** if the number is negative then it simply wont darw any.
+  The top pixels of the heart is equals to **(size - 2)**, If the number is negative then it simply wont darw any.
   ![image](https://github.com/realabases/heart.c/assets/138024063/abe1ff95-3892-457d-b2d6-a8275f5ac528)
 
 * 2:
