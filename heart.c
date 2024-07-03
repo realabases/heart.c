@@ -23,8 +23,6 @@ int main(void)
 void draw()
 {
 
-    //first row
-
     printf("  ");
 
     for(int i = 0; i<size-2; i++)
@@ -50,8 +48,6 @@ void draw()
 
     printf("  \n");
 
-    //second row
-
     printf(" ");
 
     for(int i = 0; i<size; i++)
@@ -76,8 +72,6 @@ void draw()
     }
 
     printf(" \n");
-
-    //rest
 
     for(int i = 0; i<size; i++)
     {
