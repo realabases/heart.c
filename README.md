@@ -25,7 +25,7 @@
   ![image](https://github.com/realabases/heart.c/assets/138024063/8ece1c2c-030d-4728-8d3d-ce28fa427acd)
 
 * 5:
-  Finally we need to determine the number of pixels to draw on each row, The formula to achive that is as **(2\*X + 3 + (X-1) - 2 - 2\*I)** where **X** is the size and **I** is the current row ***(first row is zero)***, Here's an example with two hearts of sizes **1** and **2**:
+  Finally we need to determine the number of pixels to draw on each row, The formula to achive that is **(2\*X + 3 + (X-1) - 2 - 2\*I)** where **X** is the size and **I** is the current row ***(first row is zero)***, Here's an example with two hearts of sizes **1** and **2**:
 
   ![image](https://github.com/realabases/heart.c/assets/138024063/34c81368-779f-4d1e-9dea-e66fb0c23737)
 
