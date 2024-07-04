@@ -10,9 +10,8 @@ int main(void)
 {
     printf("size (1-9): ");
     if (scanf("%d", &size) != 1 || (size < 1 || size > 9))
-    {
         return 1;
-    }
+    
 
     heart();
     return 0;
