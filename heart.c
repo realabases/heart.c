@@ -1,139 +1,60 @@
 #include <stdio.h>
-#include <math.h>
 
 int size;
-
-void draw();
-
-char* s = "*";
+void heart();
+void loop();
+void rest();
+char *s = "*";
 
 int main(void)
 {
     printf("size (1-9): ");
-    if (scanf("%d", &size) != 1 || (size<1 || size>9))
+    if (scanf("%d", &size) != 1 || (size < 1 || size > 9))
     {
         return 1;
     }
 
-    draw();
-
+    heart();
     return 0;
 }
 
-void draw()
+void heart()
 {
 
     printf("  ");
-
-    for(int i = 0; i<size-2; i++)
-    {
-
-        printf("%s",s);
-
-    }
-
-    for(int i = 0; i<size+2; i++)
-    {
-
-        printf(" ");
-
-    }
-
-    for(int i = 0; i<size-2; i++)
-    {
-
-        printf("%s",s);
-
-    }
-
+    loop(size - 2, 1);
+    loop(size + 2, 0);
+    loop(size - 2, 1);
     printf("  \n");
-
     printf(" ");
-
-    for(int i = 0; i<size; i++)
-    {
-
-        printf("%s",s);
-
-    }
-
-    for(int i = 0; i<size; i++)
-    {
-
-        printf(" ");
-
-    }
-
-    for(int i = 0; i<size; i++)
-    {
-
-        printf("%s",s);
-
-    }
-
+    loop(size, 1);
+    loop(size, 0);
+    loop(size, 1);
     printf(" \n");
 
-    for(int i = 0; i<size; i++)
+    for (int i = 0; i < size; i++)
     {
-
-        for(int j = 0; j<((2*size) + 3 + (size-1)); j++)
-        {
-
-            printf("%s",s);
-
-        }
-
+        loop(((2 * size) + 3 + (size - 1)), 1);
         printf("\n");
-
     }
 
-    if(size % 2 == 0)
-    {
+    if (size % 2 == 0)
+        for (int i = 0; i < (size * 1.5); i++)
+            rest(i);
+    else
+        for (int i = 0; i < (((3 * size) + 1) / 2); i++)
+            rest(i);
+}
 
-        for(int i = 0; i<(size*1.5); i++)
-        {
+void loop(con, mode)
+{
+    for (int i = 0; i < con; i++)
+        mode ? printf("%s", s) : printf(" ");
+}
 
-            for(int j = 0; j<(size-(size-1-i)); j++)
-            {
-
-                printf(" ");
-
-            }
-
-            for(int j = 0; j<(((2*size) + 3 + (size-1)) - 2) - 2*i; j++)
-            {
-
-                printf("%s",s);
-
-            }
-
-           printf("\n");
-
-        }
-
-
-    }else{
-
-        for(int i = 0; i<(((3*size) + 1) / 2); i++)
-        {
-
-            for(int j = 0; j<(size-(size-1-i)); j++)
-            {
-
-                printf(" ");
-
-            }
-
-            for(int j = 0; j<(((2*size) + 3 + (size-1)) - 2) - 2*i; j++)
-            {
-
-                printf("%s",s);
-
-            }
-
-           printf("\n");
-
-        }
-    }
-
+void rest(i)
+{
+    loop((size - (size - 1 - i)), 0);
+    loop((((2 * size) + 3 + (size - 1)) - 2) - 2 * i, 1);
+    printf("\n");
 }
