@@ -9,7 +9,7 @@
   ![image](https://github.com/realabases/heart.c/assets/138024063/abe1ff95-3892-457d-b2d6-a8275f5ac528)
 
 * 2:
-  To determine how much pixels the program needs to draw between the left and the right side of the heart it uses the formula **(2X + 3 + (X-1))** where **X** is the size, Here's an example with two hearts of sizes **1** and **2**:
+  To determine how many pixels the program needs to draw between the left and the right side of the heart it uses the formula **(2X + 3 + (X-1))** where **X** is the size, Here's an example with two hearts of sizes **1** and **2**:
   ![image](https://github.com/realabases/heart.c/assets/138024063/f2f06cf8-c3a1-49c0-b4dc-f30232050f86)
 
 
